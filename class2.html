@@ -103,9 +103,10 @@
         <section>
           <h3>The CSS Rule</h3>
 <pre><code class = "html">
-selector {
-  property: value;
-}
+  selector {
+    property: value;
+  }
+
 </code></pre>
           <div class = "left-align">
             <p>A block of CSS code is a rule.</p>
@@ -125,11 +126,12 @@ selector {
           </div>
 
 <pre><code class = "html">
-selector {
-  property-1: value-A;
-  property-2: value-B;
-  property-3: value-C;
-}
+  selector {
+    property-1: value-A;
+    property-2: value-B;
+    property-3: value-C;
+  }
+
 </code></pre>
         </section>
 
@@ -137,15 +139,17 @@ selector {
         <section>
 			  <h3>Selector: Element</h3>
 <pre><code class = "html">
-p {
-  property: value;
-}
+  p {
+    property: value;
+  }
+
 </code></pre>
       <p>Selects all paragraph elements.</p>
 <pre><code class = "html">
-img {
-  property: value;
-}
+  img {
+    property: value;
+  }
+
 </code></pre>
         <p>Selects all image elements.</p>
         </section>
@@ -154,14 +158,16 @@ img {
         <section>
 			    <h3>Selector: ID</h3>
 <pre><code class = "html">
-#footer {
-  property: value;
-}
+  #footer {
+    property: value;
+  }
+
 </code></pre>
           <p>Selects all elements with an id of "footer".</p>
 
 <pre><code class = "html">
-&lt;p id="footer">Copyright 2011&lt;/p>
+  &lt;p id="footer">Copyright 2011&lt;/p>
+
 </code></pre>
          <p>The associated HTML.</p>
 			  </section>
@@ -170,14 +176,16 @@ img {
         <section>
 			    <h3>Selector: Class</h3>
 <pre><code class = "html">
-.warning {
-  color: red;
-}
+  .warning {
+    color: red;
+  }
+
 </code></pre>
           <p>Selects all elements with a class of "warning".</p>
 
 <pre><code class = "html">
-&lt;p class="warning">Run away!&lt;/p>
+  &lt;p class="warning">Run away!&lt;/p>
+
 </code></pre>
          <p>The associated HTML.</p>
 			  </section>
@@ -199,13 +207,15 @@ img {
         <section>
         <h3>Selector: Position</h3>
 <pre><code class = "html">
-p em {
-  color: yellow;
-}
+  p em {
+    color: yellow;
+  }
+
 </code></pre>
        <p>Selects all em elements that are within a paragraph</p>
 <pre><code class = "html">
-&lt;p>This is &lt;em>important.&lt;/em>&lt;/p>
+  &lt;p>This is &lt;em>important.&lt;/em>&lt;/p>
+
 </code></pre>
         <p>The associated HTML.</p>
       </section>
@@ -215,11 +225,12 @@ p em {
         <h3>Property Values</h3>
         <p>Each property can have one or more comma separated values.</p>
 <pre><code class = "html">
-p {
-  color: white;
-  background-color: red;
-  font-family: Arial, sans-serif;
-}
+  p {
+    color: white;
+    background-color: red;
+    font-family: Arial, sans-serif;
+  }
+
 </code></pre>
       </section>
 
@@ -227,23 +238,17 @@ p {
         <section>
           <h3>Property: Color</h3>
           <p>The color property changes the color of the text.</p>
-<pre><code class="html">p {
-  color: red;
-}
+<pre><code class="html">p { color: red; }
 </code></pre>
-<pre><code class="html">p {
-  color: #ff0000;
-}
+<pre><code class="html">p { color: #ff0000; }
 </code></pre>
-<pre><code class="html">p {
-  color: rgb(255, 0, 0);
-}
+<pre><code class="html">p { color: rgb(255, 0, 0); }
 </code></pre>
         <p style="display: inline-block; margin: 0.5em;">Color name</p>
         <p style="display: inline-block; margin: 0.5em;">Hexadecimal value</p>
         <p style="display: inline-block; margin: 0.5em;">RGB value</p>
         <div style="background-color: black; padding: 1em; font-size: 0.5em;">
-          <p>
+          <p style="color: white;">
             The 17 standard colors are:
           </p>
           <ul class="inline-list" style="text-align: center;">
@@ -333,18 +338,20 @@ p {
         <section>
           <h3>Property: Fonts (shorthand)</h3>
 <pre><code class = "html">
-p {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 10px;
-  font-family: sans-serif;
-}
+  p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+
 </code></pre>
           OR
 <pre><code class = "html">
-p {
-  font: italic bold 10px sans-serif;
-}
+  p {
+    font: italic bold 10px sans-serif;
+  }
+
 </code></pre>
         </section>
 
@@ -362,6 +369,7 @@ p {
           <h3>Connecting CSS to HTML: Inline</h3>
 <pre><code class = "html">
   &lt;p style="color: red;">Some text.&lt;/p>
+
 </code></pre>
           <p>Uses the HTML attribute style.</p>
           <p>Difficult to use in large projects</p>
@@ -372,14 +380,15 @@ p {
         <section>
           <h3>Connecting CSS to HTML: Embedded</h3>
 <pre><code class = "html">
-&lt;head>
-  &lt;style type="text/css">
-    p {
-      color: blue;
-      font-size: 12px;
-    }
-  &lt;/style>
-&lt;/head>
+  &lt;head>
+    &lt;style type="text/css">
+      p {
+        color: blue;
+        font-size: 12px;
+      }
+    &lt;/style>
+  &lt;/head>
+
 </code></pre>
           <p>Inside &lt;head> element.</p>
           <p>Uses &lt;style> tag.</p>
@@ -390,14 +399,15 @@ p {
         <section>
           <h3>Connecting CSS to HTML: Linked</h3>
 <pre><code class = "html">
-&lt;head>
-  &lt;link rel="stylesheet" type="text/css" href="style.css"/>
-&lt;/head>
+  &lt;head>
+    &lt;link rel="stylesheet" type="text/css" href="style.css"/>
+  &lt;/head>
+
 </code></pre>
           <p>Shared resource for several pages.</p>
           <p>Reduced ﬁle size &amp; bandwidth</p>
           <p>Easy to maintain in larger projects.</p>
-          <p>Preferred by nerds everywhere!</p>
+          <p>Preferred by web developers everywhere!</p>
         </section>
 
         <!-- Exercise-->
@@ -416,16 +426,17 @@ p {
           <h3>Cascading</h3>
           <p>Styles "cascade" down until changed</p>
 <pre><code class = "html">
-p {
-  color: blue;
-  font-family: 'Helvetica';
-}
-.warm {
-  color: red;
-}
-#special {
-  font-family: Arial;
-}
+  p {
+    color: blue;
+    font-family: 'Helvetica';
+  }
+  .warm {
+    color: red;
+  }
+  #special {
+    font-family: Arial;
+  }
+
 </code></pre>
 
 <pre><code class = "html">
@@ -433,6 +444,7 @@ p {
   &lt;p class="green">Paragraph&lt;/p>
   &lt;p class="warm">Paragraph&lt;/p>
   &lt;p class="warm" id="special">Paragraph&lt;/p>
+
 </code></pre>
         </section>
 
