@@ -71,12 +71,12 @@
          <h3>Static Positioning</h3>
          <p>In normal flow, inline boxes flow from left to right, wrapping to next line when needed.</p>
 <pre><code class = "html">
-&lt;img src="images/cookie1.png"/>
-&lt;img src="images/cookie2.png"/>
-&lt;img src="images/cookie3.png"/>
-...
-&lt;img src="images/cookie2.png"/>
-&lt;img src="images/cookie3.png"/>
+  &lt;img src="images/cookie1.png"/>
+  &lt;img src="images/cookie2.png"/>
+  &lt;img src="images/cookie3.png"/>
+  ...
+  &lt;img src="images/cookie2.png"/>
+  &lt;img src="images/cookie3.png"/>
 
 </code></pre>
 <img src="images/cookie1.png"/>
@@ -96,6 +96,7 @@
  &lt;p>Greetings&lt;/p>
  &lt;p>Hello&lt;/p>
  &lt;p>Hi there!&lt;/p>
+
 </code></pre>
         <div class ="left-align">
           <p>Greetings</p>
@@ -128,6 +129,7 @@
     top: 20px;
     height: 100px;
     background-color: yellow;
+
   }
 </code></pre>
  <div style="border:2px solid black;">
@@ -155,16 +157,14 @@
        <section  style="border: 1px solid black">
          <h3>Absolute Positioning</h3>
          <p>The "absolute" value will take the element out of the normal flow and position it in relation to the window (or the closest non-static element).</p>
-<pre><code class = "html">
-  .top{
+<pre><code class = "html">  .top{
     position: absolute;
     top: -40px;
     right: 10px;
     background-color: yellow
   }
 </code></pre>
-<pre><code class = "html">
-  .bottom{
+<pre><code class = "html">  .bottom{
     position: absolute;
     bottom: -40px;
     left:60px;
@@ -197,6 +197,9 @@
        <h3>Z-index</h3>
          <p class="left-align">When you use positioning to move elements out of the normal flow of content, elements can overlap. You can change the order of overlapping with z-index.</p>
          <p class="left-align">The element with highest z-index goes on top.</p>
+       </section>
+       <section>
+              <h3>Z-index</h3>
 <pre><code class ="html">
   .bottom{
     position: absolute;
@@ -251,6 +254,7 @@
     width:200px;
     background:yellow;
   }
+
 </code></pre>
         <div style ="float:left; text-align: left;width:200px;background:yellow; color:black; padding: 10px;">
           <small>Hi, I'm a yellow box with black text.<br/>
@@ -278,6 +282,7 @@
   clear: right;
   clear: left;
   clear: both;
+
 </code></pre>
        </section>
 
