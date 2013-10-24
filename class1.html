@@ -283,7 +283,7 @@
             <li class = "fragment">
               <div style = "font-size: 80%">Putting your content into an HTML tag to make it look like a paragraph is Structure</div>
               <pre><code class ="html">
-                &lt;p>A paragraph is your content&lt;/p>
+  &lt;p>A paragraph is your content&lt;/p>
               </code></pre>
           </li>
           <li class = "fragment">
@@ -314,11 +314,13 @@
               <li>Marks the beginning &amp; end of an element</li>
                <li>Opening tag and Closing Tag
                <li>Tags contain characters that indicate the tags purpose</li>
-<pre><code class ="html">&lt;tagname>Stuff in the middle&lt;/tagname></code></pre>
+                <pre><code class ="html">
+  &lt;tagname>Stuff in the middle&lt;/tagname>
+                </code></pre>
               </li>
-               <li>
-<pre><code class ="html">&lt;p> This is a sample paragraph.&lt;/p></code></pre>
-              </li>
+              <pre><code class ="html">
+  &lt;p> This is a sample paragraph.&lt;/p>
+              </code></pre>
             </ul>
         </section>
 
@@ -342,11 +344,11 @@
             <strong class="blue">Stand Alone Element</strong>
             <ul>
               <li>An element that cannot contain anything else</li>
-              <li>
-<pre><code class = "html">&lt;br/>
-&lt;img/>
+<pre><code class = "html">
+  &lt;br/>
+  &lt;img/>
+
 </code></pre>
-              </li>
             </ul>
         </section>
 
@@ -372,14 +374,13 @@
           <ul>
           <li>Value is the value assigned to a given attribute.</li>
           <li>Values must be contained inside quotation marks.</li>
-          <li>
-<pre><code class ="html">&lt;div id="copyright">&copy; GDI 2013&lt;/div>
-&lt;img src="my_picture.jpg" />
-&lt;a href="http://girldevelopit.com">GDI&lt;/a>
-</code></pre>
-              </li>
         </li>
       </ul>
+      <pre><code class ="html">
+  &lt;div id="copyright">&copy; GDI 2013&lt;/div>
+  &lt;img src="my_picture.jpg" />
+  &lt;a href="http://girldevelopit.com">GDI&lt;/a>
+      </code></pre>
     </section>
 
         <!-- HTML Page-->
@@ -387,12 +388,12 @@
         <h3>Doctype</h3>
         <p>The ﬁrst thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
         <pre><code class = "html">
-          &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
-          4.01 Transitional//EN" "http://
-          www.w3.org/TR/html4/loose.dtd">
+  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
+  4.01 Transitional//EN" "http://
+  www.w3.org/TR/html4/loose.dtd">
         </code></pre>
         <pre><code class = "html">
-          &lt;!DOCTYPE html>
+  &lt;!DOCTYPE html>
         </code></pre>
         <p><small>* The doctype is case-insensitive. <br/>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
         </section>
@@ -402,10 +403,10 @@
           <p>After &lt;doctype>, the page content must be
           contained between &lt;html> tags.</p>
           <pre><code class = "html">
-            &lt;!DOCTYPE html>
-            &lt;html>
+  &lt;!DOCTYPE html>
+  &lt;html>
 
-            &lt;/html>
+  &lt;/html>
           </code></pre>
         </section>
 
@@ -424,15 +425,15 @@
         <section>
           <h3>Head and Body Tags</h3>
           <pre><code class = "html">
-            &lt;!DOCTYPE html>
-            &lt;html>
-               &lt;head>
-                &lt;title>Title of the page &lt;/title>
-               &lt;/head>
-               &lt;body>
-                The page content here.
-               &lt;/body>
-            &lt;/html>
+  &lt;!DOCTYPE html>
+  &lt;html>
+     &lt;head>
+      &lt;title>Title of the page &lt;/title>
+     &lt;/head>
+     &lt;body>
+      The page content here.
+     &lt;/body>
+  &lt;/html>
           </code></pre>
         </section>
 
@@ -457,17 +458,17 @@
         	<h3>Nesting: Example</h3>
         	<p>Elements are 'nested' inside the &lt;body&gt; tag.</p>
         	<pre><code>
-        	&lt;body&gt;
-        	   &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
-        	&lt;/body&gt;
-        	</code></pre>
-        	<p>Paragraphs 'nested' inside list items.</p>
-        	<pre><code>
-        	&lt;ul&gt;
-        	   &lt;li&gt;
-        	      &lt;p&gt;A paragraph inside a list item&lt;/p&gt;
-        	   &lt;/li&gt;
-        	&lt;/ul&gt;
+  &lt;body&gt;
+    &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
+  &lt;/body&gt;
+          </code></pre>
+          <p>Paragraphs 'nested' inside list items.</p>
+          <pre><code>
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p&gt;A paragraph inside a list item&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
         	</code></pre>
         </section>
         <!-- Elements -->
@@ -480,9 +481,11 @@
   &lt;p>Paragraph 1&lt;/p>
   &lt;p>Paragraph 2&lt;/p>
   &lt;p>Paragraph 3&lt;/p>
+
 </code></pre>
 <pre><code>
   &lt;p>Paragraph 1&lt;/p> &lt;p>Paragraph 2&lt;/p>  &lt;p>Paragraph 3&lt;/p>
+
 </code></pre>
 <pre><code>
   &lt;p>Paragraph 1&lt;/p>
@@ -490,6 +493,7 @@
 
   &lt;p>Paragraph 2&lt;/p>
   &lt;p>Paragraph 3&lt;/p>
+
 </code></pre>
           </div>
           <div>
@@ -522,6 +526,7 @@
   &lt;h4>Heading 4&lt;/h4>
   &lt;h5>Heading 5&lt;/h5>
   &lt;h6>Heading 6&lt;/h6>
+
 </code></pre>
           </div>
           <div class = "left" style = "width:50%">
@@ -548,9 +553,10 @@
           <div>
           <div class = "left" style = "width:50%">
 <pre><code>
-&lt;p>
-  Here is a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important&lt;/strong> text.
-&lt;/p>
+  &lt;p>
+    Here is a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important&lt;/strong> text.
+  &lt;/p>
+
 </code></pre>
           </div>
           <div class = "left left-align" style = "width:50%">
@@ -583,7 +589,8 @@
             <li>Title attribute: "Girl Develop It"</li>
           </ul>
 <pre><code>
-&lt;a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI&lt;/a>
+  &lt;a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI&lt;/a>
+
 </code></pre>
         <p><a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI</a></p>
         <p>The &lt;a&gt; tag surrounds text or images to turn them into links</p>
@@ -594,12 +601,12 @@
         	<h3>Link Attributes</h3>
         	<p>Links can have attributes that tell the link to do different actions like open in a new tab, or launch your e-mail program.</p>
         	<pre><code>
-&lt;a href="home.html" target="_blank">Link Text&lt;/a>
+  &lt;a href="home.html" target="_blank">Link Text&lt;/a>
         	</code></pre>
         	<p><small>Link opens in a new window/tab with <strong>target="_blank"</strong></small></p>
         	<!-- Change email to fit your chapter's needs-->
         	<pre><code>
-&lt;a href="mailto:info@girldevelopit.com">E-mail us!&lt;/a>
+  &lt;a href="mailto:info@girldevelopit.com">E-mail us!&lt;/a>
         	</code></pre>
         	<p><small>Link opens mail program by inserting <strong>mailto:</strong> directly before the email address.</small></p>
 
@@ -652,7 +659,8 @@
             <li>Alt attribute: "Girl Develop It logo"</li>
           </ul>
 <pre><code>
-&lt;img src="http://girldevelopit.com/assets/pink-logo.png" alt="Girl Develop It Logo"/>
+  &lt;img src="http://girldevelopit.com/assets/pink-logo.png" alt="Girl Develop It Logo"/>
+
 </code></pre>
 <img src="http://girldevelopit.com/assets/pink-logo.png" alt="Girl Develop It Logo"/>
           <p><small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small></p>
@@ -664,12 +672,13 @@
           <div>
           <div class = "left" style = "width:50%">
 <pre><code>
-&lt;p>
-  Imagine there's no Heaven &lt;br/>
-  It's easy if you try &lt;br/>
-  No hell below us  &lt;br/>
-  Above us only sky
-&lt;/p>
+  &lt;p>
+    Imagine there's no Heaven &lt;br/>
+    It's easy if you try &lt;br/>
+    No hell below us  &lt;br/>
+    Above us only sky
+  &lt;/p>
+
 </code></pre>
           </div>
           <div class = "left left-align" style = "width:50%">
@@ -702,12 +711,14 @@
     &lt;li>List Item&lt;/li>
     &lt;li>AnotherList Item&lt;/li>
   &lt;/ul>
+
 </code></pre>
 <pre><code>
   &lt;ol>
     &lt;li>List Item&lt;/li>
     &lt;li>AnotherList Item&lt;/li>
   &lt;/ol>
+
 </code></pre>
           </div>
           <div class = "left" style = "width:50%">
@@ -772,16 +783,17 @@
           <div>
           <div class = "left" style = "width:50%">
 <pre><code>
-&lt;table>
-  &lt;tr>
-    &lt;th>Head&lt;/th>
-    &lt;th>Head&lt;/th>
-  &lt;/tr>
-  &lt;tr>
-    &lt;td>Data&lt;/td>
-    &lt;td>Data&lt;/td>
-  &lt;/tr>
-&lt;/table>
+  &lt;table>
+    &lt;tr>
+      &lt;th>Head&lt;/th>
+      &lt;th>Head&lt;/th>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>Data&lt;/td>
+      &lt;td>Data&lt;/td>
+    &lt;/tr>
+  &lt;/table>
+
 </code></pre>
           </div>
           <div class = "left left-align" style = "width:50%">
