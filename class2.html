@@ -142,6 +142,83 @@
           <img src = "images/homepage-css.png">
         </section>
 
+        <!-- Connecting HTML to CSS-->
+        <section>
+          <h3>Connecting CSS to HTML</h3>
+          <p class = "green">3 ways</p>
+          <p>"Inline"</p>
+          <p>"Embedded"</p>
+          <p>"External"</p>
+        </section>
+
+        <!-- Inline -->
+        <section>
+          <h3>Connecting CSS to HTML: Inline</h3>
+<pre><code class = "html">
+  &lt;p style="color: red;">Some text.&lt;/p>
+
+</code></pre>
+          <p>Uses the HTML attribute style.</p>
+          <p>Difficult to use in large projects</p>
+          <p>Not preferred.</p>
+        </section>
+
+        <!-- Embedded -->
+        <section>
+          <h3>Connecting CSS to HTML: Embedded</h3>
+<pre><code class = "html">
+  &lt;head>
+    &lt;style type="text/css">
+      p {
+        color: blue;
+        font-size: 12px;
+      }
+    &lt;/style>
+  &lt;/head>
+
+</code></pre>
+          <p>Inside &lt;head> element.</p>
+          <p>Uses &lt;style> tag.</p>
+          <p>Can only be used in one html file</p>
+        </section>
+
+        <!-- External-->
+        <section>
+          <h3>Connecting CSS to HTML: Linked</h3>
+<pre><code class = "html">
+  &lt;head>
+    &lt;link rel="stylesheet" type="text/css" href="style.css"/>
+  &lt;/head>
+
+</code></pre>
+<pre><code class = "css">
+  body {
+    color: red;
+  }
+
+</code></pre>
+          <p>Shared resource for several pages.</p>
+          <p>Reduced ﬁle size &amp; bandwidth</p>
+          <p>Easy to maintain in larger projects.</p>
+          <p>Preferred by web developers everywhere!</p>
+        </section>
+
+        <!-- Exercise-->
+        <section data-state="activity">
+          <h3>Let's develop it</h3>
+          <ul>
+            <li>Create a new .css file</li>
+            <li>Add a link to the file in the head of your html file</li>
+            <li>Add the rule below to your css to make sure it works (your
+              text should now be <span style="color:red;">red</span>).</li>
+          </ul>
+          <pre><code class = "css">
+  body {
+    color: red;
+  }
+          </code></pre>
+        </section>
+
         <!-- The CSS Rule-->
         <section>
         	<h3>The CSS Rule</h3>
@@ -339,6 +416,15 @@
 </code></pre>
         </section>
 
+        <section data-state="activity">
+          <h3>Let's develop it</h3>
+          <ul>
+            <li>Edit your css file to change colors</li>
+            <li>Try some id and class selectors to use different colors</li>
+            <li>Feel free to edit your HTML, if needed</li>
+          </ul>
+        </section>
+
         <!-- Font family-->
         <section>
           <h3>Property: Font-family</h3>
@@ -400,72 +486,6 @@
   }
 
 </code></pre>
-        </section>
-
-        <!-- Connecting HTML to CSS-->
-        <section>
-          <h3>Connecting CSS to HTML</h3>
-          <p class = "green">3 ways</p>
-          <p>"Inline"</p>
-          <p>"Embedded"</p>
-          <p>"External"</p>
-        </section>
-
-        <!-- Inline -->
-        <section>
-          <h3>Connecting CSS to HTML: Inline</h3>
-<pre><code class = "html">
-  &lt;p style="color: red;">Some text.&lt;/p>
-
-</code></pre>
-          <p>Uses the HTML attribute style.</p>
-          <p>Difficult to use in large projects</p>
-          <p>Not preferred.</p>
-        </section>
-
-        <!-- Embedded -->
-        <section>
-          <h3>Connecting CSS to HTML: Embedded</h3>
-<pre><code class = "html">
-  &lt;head>
-    &lt;style type="text/css">
-      p {
-        color: blue;
-        font-size: 12px;
-      }
-    &lt;/style>
-  &lt;/head>
-
-</code></pre>
-          <p>Inside &lt;head> element.</p>
-          <p>Uses &lt;style> tag.</p>
-          <p>Can only be used in one html file</p>
-        </section>
-
-        <!-- External-->
-        <section>
-          <h3>Connecting CSS to HTML: Linked</h3>
-<pre><code class = "html">
-  &lt;head>
-    &lt;link rel="stylesheet" type="text/css" href="style.css"/>
-  &lt;/head>
-
-</code></pre>
-          <p>Shared resource for several pages.</p>
-          <p>Reduced ﬁle size &amp; bandwidth</p>
-          <p>Easy to maintain in larger projects.</p>
-          <p>Preferred by web developers everywhere!</p>
-        </section>
-
-        <!-- Exercise-->
-        <section data-state="activity">
-          <h3>Let's develop it</h3>
-          <ul>
-            <li>Create a new .css file</li>
-            <li>Add a link to the file in the head of the portfolio made last time</li>
-            <li>Add styles to change the colors, background colors or fonts of different parts of </li>
-            <li>Try using ids and classes to change specific elements</li>
-          </ul>
         </section>
 
         <!-- Cascading-->
