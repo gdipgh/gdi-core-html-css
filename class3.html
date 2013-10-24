@@ -186,13 +186,15 @@
           <p>Span is used to apply a specific style inline</p>
 
 <pre><code class ="html">
-.yellow{
-  color:yellow;
-}
+  .yellow{
+    color:yellow;
+  }
+
 </code></pre>
 
 <pre><code class ="html">
-&lt;p>Paragraph with &lt;span class="yellow">yellow&lt;/span> text.&lt;/p>
+  &lt;p>Paragraph with &lt;span class="yellow">yellow&lt;/span> text.&lt;/p>
+
 </code></pre>
 
 <p>Paragraph with <span class="yellow">yellow</span> text.</p>
@@ -206,23 +208,25 @@
         <section>
           <h3>Pseudo-classes, more CSS for links</h3>
           <div class ="left left-align" style="width:50%">
-          <p>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
+          <p><br>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
           <br/>
-          <p>CSS pseudo-classes are used to add special effects to some selectors.</p>
+          <p><br>CSS pseudo-classes are used to add special effects to some selectors.</p>
           </div>
           Syntax:
 <pre><code class ="html">
-selector:pseudo-class
-{
-  property:value;
-}
+  selector:pseudo-class
+  {
+    property:value;
+  }
+
 </code></pre>
           Example:
 <pre><code class ="html">
 a:link
-{
-  text-decoration: none;
-}
+  {
+    text-decoration: none;
+  }
+
 </code></pre>
         </section>
 
@@ -230,10 +234,11 @@ a:link
         <section>
           <h3>Pseudo-classes, more CSS for links</h3>
 <pre><code class ="html">
-  a:link	{color:#FF0000;} /* unvisited link */
-  a:visited	{color:#00FF00;} /* visited link */
-  a:hover	{color:#FF00FF;} /* mouse over link */
-  a:active	{color:#0000FF;} /* selected link */
+  a:link    {color: #FF0000;} /* unvisited link */
+  a:visited {color: #00FF00;} /* visited link */
+  a:hover   {color: #FF00FF;} /* mouse over link */
+  a:active  {color: #0000FF;} /* selected link */
+
 </code></pre>
           <p>Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!</p>
           <p>Note: a:active MUST come after a:hover in the CSS definition in order to be effective!</p>
@@ -268,15 +273,18 @@ a:link
           <h3>Padding</h3>
           15 pixels on all sides
 <pre><code class ="html">
-padding: 15px;
+  padding: 15px;
+
 </code></pre>
           10 pixels on top only
 <pre><code class ="html">
-padding-top: 10px;
+  padding-top: 10px;
+
 </code></pre>
           10 on top, 5 on right, 3 on bottom, 5 on left
 <pre><code class ="html">
-padding: 10px 5px 3px 5px;
+  padding: 10px 5px 3px 5px;
+
 </code></pre>
         </section>
 
@@ -285,21 +293,23 @@ padding: 10px 5px 3px 5px;
           <p>Four values<p>
 <pre><code class = "html">
   padding: top right bottom left;
+
 </code></pre>
           <p>Two values</p>
 <pre><code class = "html">
   padding: top/bottom right/left;
+
 </code></pre>
           <p>One value</p>
 <pre><code class = "html">
   padding: all;
+
 </code></pre>
         </section>
 
         <section>
           <h3>Padding</h3>
-<pre><code class ="html">
-  padding: 10px 20px 30px 40px;
+<pre><code class ="html">padding: 10px 20px 30px 40px;
 </code></pre>
         <img src ="images/box-model-padding2.png"/>
         </section>
@@ -316,15 +326,18 @@ padding: 10px 5px 3px 5px;
           <p>A solid red border</p>
 <pre><code class = "html">
   border: 1px solid #ff0000;
+
 </code></pre>
           <p>A thick dotted black top border</p>
 <pre><code class ="html">
   border-top: 4px dotted #000000;
+
 </code></pre>
           <p>Two diﬀerent border styles</p>
 <pre><code class ="html">
   border-top: 1px solid #ff0000;
   border-bottom: 4px dotted #000000;
+
 </code></pre>
         </section>
 
@@ -334,6 +347,7 @@ padding: 10px 5px 3px 5px;
   border-width: 10px;
   border-style: dashed;
   border-color: #666666;
+
 </code></pre>
           <p>You can specify each property separately, or all three together.</p>
         </section>
@@ -350,14 +364,17 @@ padding: 10px 5px 3px 5px;
           <p>15 pixels on all sides</p>
 <pre><code class = "html">
   margin: 15px;
+
 </code></pre>
           <p>10 on top, 5 on right, 3 on bottom, 5 on left</p>
 <pre><code class ="html">
   margin: 10px 5px 3px 5px;
+
 </code></pre>
           <p>10 pixels on top</p>
 <pre><code class = "html">
   margin-top: 10px;
+
 </code></pre>
         </section>
 
@@ -368,12 +385,14 @@ padding: 10px 5px 3px 5px;
 <pre><code class ="html">
   margin: auto;
   width: 300px;
+
 </code></pre>
           <p>FLUSH-RIGHT</p>
 <pre><code class = "html">
   margin-left: auto;
   margin-right: 5px;
   width: 300px;
+
 </code></pre>
         </section>
 
