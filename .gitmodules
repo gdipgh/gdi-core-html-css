@@ -1,1 +1,4 @@
 
+[submodule "reveal"]
+	path = reveal
+	url = git://github.com/gdipgh/reveal.js
